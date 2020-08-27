@@ -1,0 +1,49 @@
+.White{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width : 100%;
+    height: 100%;
+}
+
+.One {
+    margin-top:60%;
+    width : 90%;
+    height: 50%;
+    
+}
+
+.Container {
+    background-color : white;
+    display : flex;
+    flex-direction: column;
+    border : 1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.Text {
+    margin-top : 15px;
+    font-family: 'Jalnan';
+    font-size : 15px;
+    color : #f05052 ;
+    border-bottom : 1px solid gray;
+}
+
+.Input {
+    border : 0px
+}
+
+.Btn {
+    margin-top : 15px;
+    margin-bottom : 15px;
+    color : white;
+    border-radius : 60px;
+    font-family: 'Jalnan';
+    padding : 10px;
+    font-size : 20px;
+    background-color : #f05052;
+}

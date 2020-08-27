@@ -1,0 +1,77 @@
+.Container  {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    width : 100vw;
+    height : 100vh;
+    
+}
+
+
+.Set { 
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+.Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    border : 1px solid red;
+    margin-top : 30px;
+}
+
+.Title1 { 
+    color : #f05052;
+    font-size : 15;
+    font-family: 'Jalnan';
+}
+
+.Title2 {
+    color : #f05052;
+    font-size : 40px;
+    font-family: 'Jalnan';
+}
+
+.Title3 {
+    color : white;
+    font-size : 25px;
+    font-family: 'Jalnan';
+}
+
+.Start {
+    font-size : 25px;
+    font-family: 'Jalnan';
+    color : white;
+    background-color: green;
+    
+}
+
+.Toggle{
+    font-size : 25px;
+    font-family: 'Jalnan';
+    color : white;
+    background-color:  #131641;
+    border : 0px;
+}
+
+
+
+.ToggleTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    margin-top : 30px;
+}
+.Toggle2{
+    width : 150px;
+    border-bottom : 1px solid white;
+    font-size : 25px;
+    padding : 5px;
+    font-family: 'Jalnan';
+    color : white;
+    background-color:  rgb(102, 98, 98);
+    border : 0px;
+}
