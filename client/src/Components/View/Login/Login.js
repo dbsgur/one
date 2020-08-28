@@ -63,12 +63,13 @@ export default class Login extends Component {
       <div className="White_login">
         {/* style  안주면 안먹혀 이유는 몰랑 */}
           <form style = {{background : 'white', width : '80vw', height : '35vh',borderRadius : '60px'}}className="Container_login" onSubmit={this.onSubmit}>
-            
+            <div className = "Textbox_login">
             <div className="Textbox_login">
               <text className="Intro_login">창원대 과팅앱</text>
             </div>
             <div className="Textbox_login">
               <text className="Intro2_login">창남 창녀.</text>
+            </div>
             </div>
             
             <div className="Text_login">

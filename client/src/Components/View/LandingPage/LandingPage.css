@@ -7,9 +7,7 @@
 }
 
 .Set_landing { 
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: row-reverse;
     display : flex;
     width : 100vw;
 }

@@ -63,7 +63,6 @@ export default class LandingPage extends Component {
             <div classNanme="Container" onClick={this.toggleClose} >
                 {/* 메시지 햄버거 */}
                 <div className="Set_landing">
-                    <div style ={{marginLeft : '70vw'}}>
                         <Link to="Signup">
                             <MenuIcon style={{ fontSize: 50, color: 'white', marginTop: 5 }} />
                         </Link>
@@ -71,7 +70,6 @@ export default class LandingPage extends Component {
                         <Link to="Login">
                             <ChatBubbleOutlineIcon style={{ fontSize: 50, color: 'white', marginTop: 10 }} />
                         </Link>
-                    </div>
                 </div>
 
                 {/* 제목 */}
