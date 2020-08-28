@@ -10,8 +10,11 @@ export default class Login extends Component {
     this.state = {
       name1: "",
       pass: "",
+      success : false
     };
   }
+
+
 
   handleName = (e) => {
     this.setState({
@@ -34,37 +37,55 @@ export default class Login extends Component {
     }).then(res => res.json())
       .then(json => {
         console.log(json);
+        if(json.namebool === false) {
+          alert('아이디 틀렸졍');
+        }
+        else {
+          if(json.passbool ===false) {
+            alert('비번 틀렷졍');
+          }
+          else{
+            this.success = true;
+            console.log(this.success);
+            //자바스크립트 라우트
+            window.location.href = '/';
+          }
+        }
       })
-
-      
-
-      
   }
 
 
 
 
   render() {
+     
     return (
-      <div className="White">
-        <div className="One">
-          <form className="Container" onSubmit={this.onSubmit}>
-
-            <div className="Text">
+      <div className="White_login">
+        {/* style  안주면 안먹혀 이유는 몰랑 */}
+          <form style = {{background : 'white', width : '80vw', height : '35vh',borderRadius : '60px'}}className="Container_login" onSubmit={this.onSubmit}>
+            
+            <div className="Textbox_login">
+              <text className="Intro_login">창원대 과팅앱</text>
+            </div>
+            <div className="Textbox_login">
+              <text className="Intro2_login">창남 창녀.</text>
+            </div>
+            
+            <div className="Text_login">
               <label for="name" >아이디 </label>
-              <input type="text" id="name" name="name1" value={this.state.name1} onChange={this.handleName} className="Input" />
+              <input type="text" id="name" name="name1" value={this.state.name1} onChange={this.handleName} className="Input_login" />
             </div>
 
-            <div className="Text">
+            <div className="Text_login">
               <label for="pass" >비밀번호 </label>
-              <input type="password" id="pass" name="pass" value={this.state.pass} onChange={this.handleName} className="Input" />
+              <input type="password" id="pass" name="pass" value={this.state.pass} onChange={this.handleName} className="Input_login" />
             </div>
 
             <div>
-              <button className="Btn" type="submit">로그인</button>
+
+              <button className="Btn_login" type="submit">로그인</button>
             </div>
           </form>
-        </div>
       </div>
     )
   }

@@ -1,19 +1,20 @@
-.Container  {
+.Container_landing  {
     display : flex;
     flex-direction: column;
     justify-content: center;
     width : 100vw;
     height : 100vh;
-    
 }
 
-
-.Set { 
+.Set_landing { 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     display : flex;
-    flex-direction: row-reverse;
+    width : 100vw;
 }
 
-.Title {
+.Title_landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,25 +23,25 @@
     margin-top : 30px;
 }
 
-.Title1 { 
+.Title1_landing { 
     color : #f05052;
     font-size : 15;
     font-family: 'Jalnan';
 }
 
-.Title2 {
+.Title2_landing {
     color : #f05052;
     font-size : 40px;
     font-family: 'Jalnan';
 }
 
-.Title3 {
+.Title3_landing {
     color : white;
     font-size : 25px;
     font-family: 'Jalnan';
 }
 
-.Start {
+.Start_landing {
     font-size : 25px;
     font-family: 'Jalnan';
     color : white;
@@ -48,7 +49,7 @@
     
 }
 
-.Toggle{
+.Toggle_landing {
     font-size : 25px;
     font-family: 'Jalnan';
     color : white;
@@ -56,22 +57,27 @@
     border : 0px;
 }
 
-
-
-.ToggleTitle {
+.ToggleTitle_landing {
+    
     display: flex;
+    margin-top : 150px;
+    opacity: 0.8;
     flex-direction: column;
     justify-content: center;
     align-items : center;
-    margin-top : 30px;
-}
-.Toggle2{
+    position: absolute;
+    
     width : 150px;
+   
+}
+
+.Toggle2_landing{
+    width : 150px;
+    background-color:  rgb(92, 91, 91);
     border-bottom : 1px solid white;
     font-size : 25px;
     padding : 5px;
     font-family: 'Jalnan';
     color : white;
-    background-color:  rgb(102, 98, 98);
     border : 0px;
 }

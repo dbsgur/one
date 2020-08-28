@@ -1,4 +1,4 @@
-.Font {
+.Font_start {
     font-size : 30px;
     font-family: 'Jalnan';
     color : white;
@@ -8,7 +8,7 @@
     border : 0px;
 }
 
-.Font2 {
+.Font2_start {
     font-size : 30px;
     border-radius: 30px;
     padding : 15px;

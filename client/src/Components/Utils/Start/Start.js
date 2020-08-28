@@ -36,11 +36,11 @@ constructor(props){
         return (
             this.props.count === 1 ?
             <div>
-                <button className = "Font"> 매칭 찾기 </button>
+                <button className = "Font_start"> 매칭 시작! </button>
             </div>
             :
             <div>
-                <button className ="Font2"> 매칭 시작 </button>
+                <button className ="Font2_start"> 매칭 찾기! </button>
             </div>
            
 
